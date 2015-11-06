@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<center>
+<html lang="" data-ng-app="myApp">
+<head>
+  <meta t="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>  
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="css/main.css"> 
+    <h1>Register Page</h1>
+</head>
+    
+<body style="background-color:#696969">
+<div  ng-controller="RegisterController">
+        
+<form>
+<table>
+  <tr>
+    <td>User Name</td>
+    <td><input type="text" name="userName" id="userName" data-ng-model="userName"/></td>
+  </tr>
+  <tr>
+    <td>Password</td>
+    <td><input type="password" name="password" id="password" data-ng-model="password"/></td>
+  </tr>
+  <tr>
+    <td>Email Address</td>
+    <td><input type="text" name="email" id="email" data-ng-model="email"/></td>
+  </tr>
+    
+</table><br/>
+   <button id="register" name="register" ng_click="register(userName, password, email)">Register</button>
+    <a href="login.html"><input type="button" value="Return to LOGIN page"/></a>
+</form>
+   
+    <br/>
+    <p > {{msg}}</p>
+     
+</div>
+ </body>
+    </center>
+</html>
